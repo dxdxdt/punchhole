@@ -119,10 +119,10 @@ T-STUN works as follows:
     client's public IP address and port
  5. Both peers proceed to do TCP SO
 
-<img src="drawing-0.svg" width="600" style="background-color: white;">
-<img src="drawing-1.svg" width="600" style="background-color: white;">
-<img src="drawing-2.svg" width="600" style="background-color: white;">
-<img src="drawing-3.svg" width="600" style="background-color: white;">
+<img src="https://raw.githubusercontent.com/dxdxdt/punchhole/refs/heads/main/drawing-0.svg" width="600" style="background-color: white;">
+<img src="https://raw.githubusercontent.com/dxdxdt/punchhole/refs/heads/main/drawing-1.svg" width="600" style="background-color: white;">
+<img src="https://raw.githubusercontent.com/dxdxdt/punchhole/refs/heads/main/drawing-2.svg" width="600" style="background-color: white;">
+<img src="https://raw.githubusercontent.com/dxdxdt/punchhole/refs/heads/main/drawing-3.svg" width="600" style="background-color: white;">
 
 ## OS Support
 `tstun` server runs on Linux. It should be able to run on other Unices as well,
