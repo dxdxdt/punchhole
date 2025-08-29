@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project]
+name = "punchhole"
+version = "0.0.0"
+authors = [
+  { name="David Timber", email="dxdt@dev.snart.me" },
+]
+description = "Punch TCP connections through NATs and firewalls by simultaneous open, with T-STUN server's assist"
+readme = "README.md"
+requires-python = ">= 3.9"
+# dependencies = []
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: System :: Networking",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/punchhole"]
+
+[project.urls]
+Homepage = "https://github.com/dxdxdt/punchhole/"
+Issues = "https://github.com/dxdxdt/punchhole/issues"

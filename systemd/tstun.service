@@ -1,0 +1,13 @@
+[Unit]
+Description=Trivial STUN server
+After=network.target
+Requires=network.target
+
+[Service]
+ExecStartPre=/bin/rm -rf /run/tstun
+ExecStartPre=/bin/mkdir /run/tstun
+WorkingDirectory=/run/tstun
+ExecStart=/usr/bin/python3 -m punchhole.tstun
+
+[Install]
+WantedBy=multi-user.target

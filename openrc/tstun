@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+description="Trivial STUN server"
+command_background=true
+pidfile=/run/tstun.py.pid
+directory=/run/tstun
+command=/usr/bin/python3
+command_args=-m punchhole.tstun
+
+start_pre () {
+	rm -rf "$directory"
+	mkdir -p "$directory"
+	chmod 700 "$directory"
+}

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="100mm"
+   viewBox="0 0 210 100"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1.5"
+       markerHeight="1.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1.5"
+       markerHeight="1.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path9-6" />
+    </marker>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-0.26284195,-2.1027356)">
+    <rect
+       style="fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.491294;stroke-linecap:round;stroke-miterlimit:5"
+       id="rect6"
+       width="94.135117"
+       height="20.276537"
+       x="64.377419"
+       y="36.575924" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.29167px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-miterlimit:5"
+       x="95.148781"
+       y="36.575924"
+       id="text6"><tspan
+         id="tspan6"
+         style="stroke-width:0.529"
+         x="95.148781"
+         y="36.575924">session pipe</tspan></text>
+  </g>
+  <g
+     id="layer2"
+     style="display:none">
+    <text
+       xml:space="preserve"
+       style="font-size:5.29167px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-miterlimit:5"
+       x="8.4109411"
+       y="12.353571"
+       id="text7"><tspan
+         id="tspan7"
+         style="stroke-width:0.529"
+         x="8.4109411"
+         y="12.353571">1st client connects</tspan><tspan
+         style="stroke-width:0.529"
+         x="8.4109411"
+         y="18.968159"
+         id="tspan8">server writes public IP address, port</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.457146;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="M 33.114544,20.476388 61.216596,42.705396"
+       id="path8" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.81944px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       x="87.263519"
+       y="47.837234"
+       id="text9"><tspan
+         id="tspan9"
+         style="font-size:8.81944px;fill:#000000;fill-opacity:0;stroke-width:0.5"
+         x="87.263519"
+         y="47.837234">1.1.1.1 12345</tspan></text>
+  </g>
+  <g
+     id="layer3"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:5.29167px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-miterlimit:5"
+       x="89.852737"
+       y="81.046669"
+       id="text7-1"><tspan
+         id="tspan7-2"
+         style="stroke-width:0.529"
+         x="89.852737"
+         y="81.046669">2nd client connects</tspan><tspan
+         style="stroke-width:0.529"
+         x="89.852737"
+         y="87.661255"
+         id="tspan10">reads the public IP address and port of 1st client</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.81944px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       x="149.6196"
+       y="76.954216"
+       id="text9-2"><tspan
+         id="tspan9-0"
+         style="font-size:8.81944px;fill:#000000;fill-opacity:0;stroke-width:0.5"
+         x="149.6196"
+         y="76.954216">1.1.1.1 12345</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.408826;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-3)"
+       d="m 110.72249,55.07582 36.6832,13.619386"
+       id="path8-2" />
+  </g>
+  <g
+     id="layer4"
+     style="display:none">
+    <text
+       xml:space="preserve"
+       style="font-size:5.29167px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-miterlimit:5"
+       x="85.9422"
+       y="80.524467"
+       id="text7-1-9"><tspan
+         style="stroke-width:0.529"
+         x="85.9422"
+         y="80.524467"
+         id="tspan10-2">server writes IP address and port of the 2nd client</tspan></text>
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.442922;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#RoundedArrow)"
+       d="M 110.81056,56.655773 147.3044,72.724467"
+       id="path8-2-2" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.81944px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       x="85.005493"
+       y="46.881645"
+       id="text9-4"><tspan
+         id="tspan9-7"
+         style="font-size:8.81944px;fill:#000000;fill-opacity:0;stroke-width:0.5"
+         x="85.005493"
+         y="46.881645">2.2.2.2 54321</tspan></text>
+  </g>
+  <g
+     id="layer5"
+     style="display:none">
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.457146;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#RoundedArrow)"
+       d="M 36.012525,32.520719 64.114577,54.749727"
+       id="path8-1" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.81944px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       x="11.133798"
+       y="29.950817"
+       id="text9-4-0"><tspan
+         id="tspan9-7-6"
+         style="font-size:8.81944px;fill:#000000;fill-opacity:0;stroke-width:0.5"
+         x="11.133798"
+         y="29.950817">2.2.2.2 54321</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29167px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#cdb6ce;fill-opacity:0.5;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-miterlimit:5"
+       x="6.8338895"
+       y="14.193464"
+       id="text7-7"><tspan
+         style="stroke-width:0.529"
+         x="6.8338895"
+         y="14.193464"
+         id="tspan8-5">1st client reads public IP address, port of 2nd client</tspan></text>
+  </g>
+</svg>
