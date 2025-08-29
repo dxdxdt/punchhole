@@ -102,7 +102,6 @@ def do_tstun (s: socket.socket) -> tuple[str, int]:
 
 def set_common_sockopt (s: socket.socket):
 	s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-	s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
 
 def scrub_unprint (data: bytes) -> str:
 	allowed = set(bytes(string.printable, 'ascii'))
