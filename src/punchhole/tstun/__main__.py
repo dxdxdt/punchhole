@@ -36,7 +36,7 @@ def handle_exit_after_fifo (*_):
 
 def do_fifo (k: str, msg: bytes) -> bytes:
 	global fifo_path
-	path = FIFO_PREFIX + '/' + mkfifo_path(k)
+	fifo_path = path = FIFO_PREFIX + '/' + mkfifo_path(k)
 	dir = os.path.dirname(path)
 	fd = -1
 
@@ -55,13 +55,13 @@ def do_fifo (k: str, msg: bytes) -> bytes:
 		os.write(fd, msg)
 
 	os.makedirs(dir, exist_ok = True)
-	fifo_path = path
-	signal.signal(signal.SIGALRM, handle_exit_after_fifo)
 	try:
 		os.mkfifo(path)
-		# This will do no good when the process dies. Just restart the service
-		# everyday.
+		# There are many cases where the fifo ends up dangling. Suggestions:
+		#  1. Restart the service daily
+		#  2. Run `find -type p -mtime +1 -delete` periodically
 		atexit.register(os.unlink, path)
+		signal.signal(signal.SIGALRM, handle_exit_after_fifo)
 		do_write()
 		ret = do_read()
 	except FileExistsError:
@@ -105,11 +105,15 @@ def server_loop (s: socket.socket):
 		try: c, sa = s.accept()
 		except BlockingIOError: continue
 
-		if debug:
-			sys.stderr.write('accept(): ' + str(sa) + os.linesep)
+		with c:
+			if debug:
+				sys.stderr.write('accept(): ' + str(sa) + os.linesep)
 
-		try:
-			pid = os.fork()
+			try:
+				pid = os.fork()
+			except OSError as e:
+				sys.stderr.write('fork(): ' + str(e) + os.linesep)
+				continue
 			if pid == 0:
 				if debug:
 					sys.stderr.write('fork(): ' + str(os.getpid()) + os.linesep)
@@ -117,12 +121,7 @@ def server_loop (s: socket.socket):
 				signal.alarm(MAX_CLIENT_TIME)
 				s.close()
 				ec = child_main(c, sa)
-				c.close()
 				sys.exit(ec)
-		except OSError as e:
-			sys.stderr.write('fork(): ' + str(e) + os.linesep)
-			# keep going
-		c.close()
 
 # Automatically reap child processes. Careful! This is a Linux thing.
 signal.signal(signal.SIGCHLD, signal.SIG_IGN)
