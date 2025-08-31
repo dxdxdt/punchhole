@@ -81,9 +81,9 @@ def mkmsg (sa: tuple) -> bytes:
 	return (' '.join(sa)).encode('ascii')
 
 def child_main (s: socket.socket, sa: tuple[str, int]) -> int:
-	msg = s.recv(16)
+	msg = s.recv(32)
 	s.shutdown(socket.SHUT_RD)
-	if len(msg) != 16:
+	if len(msg) != 32:
 		return 1
 	key = msg.hex()
 

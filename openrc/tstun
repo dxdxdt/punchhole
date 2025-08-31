@@ -4,7 +4,7 @@ command_background=true
 pidfile=/run/tstun.py.pid
 directory=/run/tstun
 command=/usr/bin/python3
-command_args=-m punchhole.tstun
+command_args="-m punchhole.tstun"
 
 start_pre () {
 	rm -rf "$directory"
